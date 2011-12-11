@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/lolreplay'
+
+game = LolReplay::Game.new ARGV.shift
+
+puts Time.at game.timestamp
+
+game.players.each do |player|
+  puts "#{player.kills}/#{player.deaths}/#{player.assists}\t#{player.name}"
+end
