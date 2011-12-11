@@ -18,7 +18,7 @@ one liner:
 The program under the bin directory should give you a little idea as to how this
 library works. Here's another short example:
 
-```
+``` ruby
   game = LolReplay::Game.new "path/to/lrffile.lrf"
 
   samwho = game.player "Samwho"
@@ -54,7 +54,7 @@ explain how to know where to find the data you want.
 
 Here's some JSON output of a recent game I had:
 
-```
+``` json
 {
   "accountID": 12345678,
     "clientHash": "6f7t2dcaga7hfg64g9433408s8defy6y",
